@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testng run in jenkins]">
+  <test thread-count="5" name="Testng vs Jenkins(failed)">
+    <parameter name="password" value="Imax123#"/>
+    <parameter name="url" value="https://hhcuat.gsihealth.net"/>
+    <parameter name="username" value="prabhaharan.velu@gsihealth.com"/>
+    <classes>
+      <class name="com.Test.TestNGProgramExampleforJenkins.TestNG2">
+        <methods>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="admin"/>
+          <include name="intialize"/>
+          <include name="shut"/>
+        </methods>
+      </class> <!-- com.Test.TestNGProgramExampleforJenkins.TestNG2 -->
+    </classes>
+  </test> <!-- Testng vs Jenkins(failed) -->
+</suite> <!-- Failed suite [Testng run in jenkins] -->
